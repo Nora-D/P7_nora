@@ -76,21 +76,7 @@ st.write("Les explications de cette décision sont données par les deux graphiq
 
 
 
-# Plot!
-#st.plotly_chart(fig, use_container_width=True)
-
-#opening the image
-
-image = Image.open('shap.png')
-
-def shap_glob:
-    response = requests.get(base + '/shap')
-
-    file = open("sample_image.png", "wb")
-    file.write(response.content)
-    file.close()
 
 
 #displaying the image on streamlit app
 st.write("Ce premier graphique montre l'importance des informations (par ordre d'importance) dans l'établissement du modèle d'optention du crédit")
-st.image(image)
